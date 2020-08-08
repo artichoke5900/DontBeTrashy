@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Don't Be Trashy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	</head>
+	<body>
+		<nav id="header">
+			<div class="menu-icon">
+			<span class="fas fa-bars"></span></div>
+			<div class="logo">Don't Be Trashy</div>
+			<div class="nav-items">
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<label for="btn-1" class="show"><h6>Products</h6></label>
+          			<a href="#">Products</a>
+          			<input type="checkbox" id="btn-1" class="hidden">
+          			<ul>
+						<li><a href="#">Soap</a></li>
+						<li><a href="products_shampoos.html">Shampoo</a></li>
+						<li><a href="/spfc_prod.html">Essences</a></li>
+					</ul>
+				</li>
+				<li><a href="about_us.html">About Us</a></li>
+			</div>
+			<div class="search-icon">
+				<span class="fas fa-search"></span>
+			</div>
+			<div class="cancel-icon">
+				<span class="fas fa-times"></span>
+			</div>
+			<form action="#">
+        		<input type="search" class="search-data" placeholder="Search">
+        		<button type="submit" class="fas fa-search"></button>
+      		</form>
+		</nav>
+         	
+		<section class="banner full">
+			<article>
+				<img src="images/img1.jpg" alt="" />
+				<div class="inner">
+					<header>
+						<h2>Green Is The New Black</h2>
+					</header>
+				</div>
+			</article>
+			<article>
+				<img src="images/img2.jpg" alt="" />
+				<div class="inner">
+					<header>
+						<h2>Kiss Me, I'm Organic</h2>
+					</header>
+				</div>
+			</article>
+			<article>
+				<img src="images/img3.jpg"  alt="" />
+				<div class="inner">
+					<header>
+						<h2>I Rule</h2>
+					</header>
+				</div>
+			</article>
+			<article>
+				<img src="images/img4.jpg"  alt="" />
+				<div class="inner">
+					<header>
+						<h2>I'm Organic, Kiss Me</h2>
+					</header>
+				</div>
+			</article>
+			<article>
+				<img src="images/img5.jpg"  alt="" />
+				<div class="inner">
+					<header>
+						<h2>No</h2>
+					</header>
+				</div>
+			</article>
+		</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+	</body>
+</html>

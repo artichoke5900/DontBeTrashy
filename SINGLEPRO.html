@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Don't Be Trashy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+    body {
+  background-image: url('images/img1.jpg');
+  background-size: cover;
+}
+    .propic
+    {
+      position: absolute;
+      top: 180px;
+      left: 80px;
+    }
+    .proname
+    { 
+      position: absolute;
+      top: 110px;
+      left: 80px;
+    }
+    .data
+    { 
+      position: absolute;
+      top: 180px;
+      left: 35%;
+      right: 30%;
+
+    }
+    .rate
+    { 
+      position: absolute;
+      top: 110px;
+      
+      right: 50px;
+
+    }
+    
+    .by
+    { 
+      position: absolute;
+      top: 145px;
+      left: 80px;
+    }
+    h4
+    {
+    	font-style: inherit;
+    	color: #fff;
+  		font-size: 30px;
+  		font-weight: 600;
+    }
+    h2
+    {
+
+      font-style: inherit;
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+    
+    }
+    p{
+      width: 60%;
+    	font-style: inherit;
+    	color: #fff;
+  		font-weight: 500;
+      padding-left: 80px;
+
+    }
+    #singleproduct
+    {
+      padding: 0;
+      position: fixed;
+      width: 80%;
+      height: 80%;
+      top: 15%;
+      left: 10%;
+      right: 20%;
+      bottom: 20%;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    #singleproduct >h4,h3,h2,img,p,hr{
+      margin-top: -70px;
+      margin-left: -40px;
+    }
+
+  </style>
+	</head>
+	<body>
+		<nav id="header">
+			<div class="menu-icon">
+			<span class="fas fa-bars"></span></div>
+			<div class="logo">Don't Be Trashy</div>
+			<div class="nav-items">
+				<li><a href="/index.html">Home</a></li>
+				<li>
+					<label for="btn-1" class="show"><h6>Products</h6></label>
+          			<a href="#">Products</a>
+          			<input type="checkbox" id="btn-1" class="hidden">
+          			<ul>
+						<li><a href="#">Soap</a></li>
+						<li><a href="products_shampoos.html">Shampoo</a></li>
+						<li><a href="/spfc_prod.html">Essences</a></li>
+					</ul>
+				</li>
+				<li><a href="about_us.html">About Us</a></li>
+			</div>
+			<div class="search-icon">
+				<span class="fas fa-search"></span>
+			</div>
+			<div class="cancel-icon">
+				<span class="fas fa-times"></span>
+			</div>
+			<form action="#">
+        		<input type="search" class="search-data" placeholder="Search">
+        		<button type="submit" class="fas fa-search"></button>
+      		</form>
+		</nav>
+         	
+		
+		
+	<div id="singleproduct"> 
+      <h4 class="proname">L'Oreal Paris Revitalift</h4>
+			<h3 class="by">by L'Oreal Paris</h3>
+			<img src="images/LOREALPRO.jpg" class="propic" width="310" height="335" />
+		  <h2 class="rate">GREEN RATING : 7.5 / 10</h2>
+    <p class="data"> INGREDIENTS:
+      <br>water /
+          glycerin /
+          hydroxyethylpiperazine ethane sulfonic acid /
+          sodium hyaluronate /
+          peg-60 hydrogenated castor oil /
+          rye seed extract /
+          calcium pantothenate /
+          dipeptide diaminobutyroyl benzylamide /diacetate /
+          ascorbyl glucoside /
+          disodium edta /
+          pentylene glycol /
+          phenoxyethanol /
+          chlorphenesin
+
+      <br><br> SKIN TYPE : <br>All skin types
+      <br><br> HOW TO USE : <br>For best anti wrinkle results use every morning & evening, apply 2-3 drops to the face and neck, and gently smooth into skin. Avoid the eye area.
+    </p>
+  </div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+  $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+
+	</body>
+</html>

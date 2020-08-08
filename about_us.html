@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="abtus_style.css">
+</head>
+
+<style>
+    body {
+        animation: fadeInAnimation ease 0.7s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeInAnimation {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    section {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    
+
+    <section class="container" id="container_to_be_aligned">
+
+        <nav id="header">
+            <div class="menu-icon">
+            <span class="fas fa-bars"></span></div>
+            <div class="logo">Don't Be Trashy</div>
+            <div class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <label for="btn-1" class="show"><h6>Products</h6></label>
+                      <a href="#">Products</a>
+                      <input type="checkbox" id="btn-1" class="hidden">
+                      <ul>
+                        <li><a href="#">Soap</a></li>
+                        <li><a href="/products_shampoos.html">Shampoo</a></li>
+                        <li><a href="/spfc_prod.html">Essences</a></li>
+                    </ul>
+                </li>
+                <li><a href="about_us.html">About Us</a></li>
+            </div>
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+            <div class="cancel-icon">
+                <span class="fas fa-times"></span>
+            </div>
+            <form action="#">
+                <input type="search" class="search-data" placeholder="Search">
+                <button type="submit" class="fas fa-search"></button>
+              </form>
+        </nav>
+
+
+        <br>
+        <br>
+        <h1 class="display-4">Welcome to Don't Be Trashy!</h1>
+
+        <!-- <div id = "cf">
+            <img src="imgs/frog.jpg" alt="">
+        </div>
+         -->
+        <br>
+        <p>
+            We are a student group dedicated to the goal of spreading awareness about using eco-friendly products.
+            <br>
+            Even a small step can have a positive impact on the world around us, and we strive to be an accessible,
+            <br>
+            user-friendly source of information to help you help the world!
+        </p>
+
+        <p>
+            Browse our log and learn more about the eco-friendly qualities of your daily-use products!
+            <!-- <br>
+            <a href="index.html">
+                Return to home
+            </a> -->
+        </p>
+
+        <br>
+        <form method="get" action="/products_shampoos.html">
+            <button type="submit">Continue</button>
+        </form>
+
+        <!-- <article>
+            <img src="images/img1.jpg" alt="" />
+            <div class="inner">
+                <header>
+                    <h2>Green Is The New Black</h2>
+                </header>
+            </div>
+        </article> -->
+
+    </section>
+
+    <!-- linking html to js file -->
+    <!-- <script type="text/javascript" src="javascript_part.js"></script> -->
+
+</body>
+
+</html>
